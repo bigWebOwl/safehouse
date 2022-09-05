@@ -5,14 +5,7 @@ $(document).ready(function () {
         $('.header__mob-menu').toggleClass('open-menu');
         $('body').toggleClass('fixed-page');
         $('.menu').toggleClass('open');
-        if ($('body').hasClass('fixed-page')) {
-            $('.menu').removeClass('open');
-            $('.menu').css('display', 'none');
-        }
-        else{
-            $('.menu').addClass('open');
-            $('.menu').css('display', 'flex');
-        }
+        
     });
 
     $(window).resize(function () {
