@@ -9,6 +9,9 @@ $(document).ready(function () {
             $('.menu').removeClass('open');
             $('.menu').css('display', 'none');
         }
+        else{
+            $('.menu').css('display', 'block');
+        }
     });
 
     $(window).resize(function () {
