@@ -5,7 +5,10 @@ $(document).ready(function () {
         $('.header__mob-menu').toggleClass('open-menu');
         $('body').toggleClass('fixed-page');
         $('.menu').toggleClass('open');
-
+        if ($('body').hasClass('fixed-page')) {
+            $('.menu').removeClass('open');
+            $('.menu').css('display', 'none');
+        }
     });
 
     $(window).resize(function () {
@@ -106,13 +109,15 @@ $(document).ready(function () {
         infinite: true,
         speed: 500,
         fade: true,
-        cssEase: 'linear', 
+        cssEase: 'linear',
         autoplay: true,
         autoplaySpeed: 2000,
     });
 
-    $(function() {
+    $(function () {
         $("[data-fancybox]").fancybox();
-        });
+    });
+
+
 });
 
