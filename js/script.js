@@ -11,6 +11,7 @@ $(document).ready(function () {
         }
         else{
             $('.menu').addClass('open');
+            $('.menu').css('display', 'flex');
         }
     });
 
