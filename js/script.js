@@ -10,7 +10,7 @@ $(document).ready(function () {
             $('.menu').css('display', 'none');
         }
         else{
-            $('.menu').css('display', 'block');
+            $('.menu').addClass('open');
         }
     });
 
